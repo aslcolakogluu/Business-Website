@@ -4,10 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>POBİAD Navbar</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <nav class="navbar">
     <div class="logo">
       <img src="logo.png" alt="POBİAD Logo" />
@@ -22,40 +31,40 @@
         <a href="#">Anasayfa</a>
       </li>
       <li class="dropdown">
-        <a href="#">Hakkımızda <span class="arrow">&#9662;</span></a>
+        <a href="#">Hakkımızda <i class="fas fa-chevron-down arrow"></i></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Pobiad Hakkında</a></li>
-          <li><a href="#">Misyonumuz - Vizyonumuz</a></li>
-          <li><a href="#">Amaçlar ve Hedefler</a></li>
-          <li><a href="#">Tüzüğümüz</a></li>
-          <li><a href="#">Tarihçemiz</a></li>
+          <li><a href="#pobiad-hakkinda">Pobiad Hakkında</a></li>
+          <li><a href="#misyon-vizyon">Misyonumuz - Vizyonumuz</a></li>
+          <li><a href="#amac-hedef">Amaçlar ve Hedefler</a></li>
+          <li><a href="#tuzuk">Tüzüğümüz</a></li>
+          <li><a href="#tarihce">Tarihçemiz</a></li>
         </ul>
       </li>
       <li class="dropdown">
-        <a href="#">Kurullar <span class="arrow">&#9662;</span></a>
+        <a href="#">Kurullar <i class="fas fa-chevron-down arrow"></i></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Yönetim Kurulu</a></li>
-          <li><a href="#">Denetim Kurulu</a></li>
-          <li><a href="#">Önceki Kurullar</a></li>
+          <li><a href="#yonetim-kurulu">Yönetim Kurulu</a></li>
+          <li><a href="#denetim-kurulu">Denetim Kurulu</a></li>
+          <li><a href="#onceki-kurullar">Önceki Kurullar</a></li>
         </ul>
       </li>
       <li class="dropdown">
-        <a href="#">Faaliyetlerimiz <span class="arrow">&#9662;</span></a>
+        <a href="#">Faaliyetlerimiz <i class="fas fa-chevron-down arrow"></i></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Etkinlikler</a></li>
-          <li><a href="#">Toplantılar</a></li>
-          <li><a href="#">Projeler</a></li>
+          <li><a href="#etkinlikler">Etkinlikler</a></li>
+          <li><a href="#toplantilar">Toplantılar</a></li>
+          <li><a href="#projeler">Projeler</a></li>
         </ul>
       </li>
       <li class="dropdown">
-        <a href="#">Duyurular <span class="arrow">&#9662;</span></a>
+        <a href="#">Duyurular <i class="fas fa-chevron-down arrow"></i></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Gündem</a></li>
-          <li><a href="#">Etkinlik Takvimi</a></li>
-          <li><a href="#">İş İlanları</a></li>
+          <li><a href="#gundem">Gündem</a></li>
+          <li><a href="#takvim">Etkinlik Takvimi</a></li>
+          <li><a href="#ilanlar">İş İlanları</a></li>
         </ul>
       </li>
-      <li><a href="#">İletişim</a></li>
+      <li><a href="#iletisim">İletişim</a></li>
     </ul>
 
     <div class="navbar-right">
@@ -65,26 +74,92 @@
   </nav>
 
   <div class="hero-section">
-  <div class="hero-content">
-    <div class="left">
-      <h2>Birlikte<br>30 Yıl,<br>Geleceğe<br>Hep Birlikte!</h2>
-      <p class="description">
-         30 yıllık bu yolculuk boyunca yanımızda olan tüm üyelerimize, destekçilerimize ve iş ortaklarımıza teşekkür ederiz. Geçmişimizden aldığımız güçle geleceğe daha emin adımlarla yürüyoruz.
-      </p>
-    </div>
-    
-   
+    <div class="hero-content">
+      <div class="left">
+        <h2>Birlikte<br>30 Yıl,<br>Geleceğe<br>Hep Birlikte!</h2>
+        <p class="description">
+          30 yıllık bu yolculuk boyunca yanımızda olan tüm üyelerimize, destekçilerimize ve iş ortaklarımıza teşekkür ederiz. Geçmişimizden aldığımız güçle geleceğe daha emin adımlarla yürüyoruz.
+        </p>
+      </div>
 
-    <div class="right">
-      <span class="big-number">30</span>
-      <span class="big-year">YIL</span>
+      <div class="right">
+        <div class="number-container">
+          <div class="big-number">30</div>
+          <div class="big-year">YIL</div>
+        </div>
+      </div>
+
+      <div class="nav-button left-btn">
+        <i class="ri-arrow-left-line"></i>
+      </div>
+
+      <div class="nav-button right-btn">
+        <i class="ri-arrow-right-line"></i>
+      </div>
     </div>
   </div>
 
-  
-  <div class="nav-button left-btn">&#8592;</div>
-  <div class="nav-button right-btn">&#8594;</div>
-</div>
+  <section id="pobiad-hakkinda" class="page">
+    <div class="image-container">
+      <img src="pobiad.jpeg" alt="POBİAD Görseli"> 
+    </div>
+    <h1>"POBİAD"</h1>
+    <h2>ORTAK DEĞERİMİZ POLATLI</h2>
+    <p>
+      Ankara'da Polatlı için çalışan bir dernek Polatlılı Bürokrat ve İş Adamları Derneği "POBİAD". 
+      Bir çok Polatlı dışındaki Polatlılılar buluşup konferanslar, gelişim seminerleri, öğrencilerin çalışma ortamları, 
+      günler ve bir çok organizasyonları düzenleniyor. Ortak değerimiz Polatlı sloganıyla yola çıkan dernek hiç bir siyasi düşünceye girmeden sadece Polatlı için çalışmalar yapıyor.
+    </p>
+    <h3>Neler Yapıyoruz?</h3>
+    <div class="features">
+      <div class="features-item"><span>1</span>Konferanslar</div>
+      <div class="features-item"><span>3</span>Organizasyon</div>
+      <div class="features-item"><span>2</span>Seminerler</div>
+      <div class="features-item"><span>4</span>Çalışma Ortamları</div>
+    </div>
+
+    <div class="info-boxes">
+      <div class="box">
+        <div class="icon">💛</div>
+        <h4>Üye</h4>
+        <p>Farklı meslek gruplarından ve yaş aralıklarından oluşan 300 üyemizle, büyüyen bir aile olmanın gururunu yaşıyoruz.</p>
+      </div>
+      <div class="box">
+        <div class="icon">🗓️</div>
+        <h4>Etkinlik</h4>
+        <p>Derneğimizde bugüne kadar 335 farklı etkinlik başarıyla düzenlenmiştir.</p>
+      </div>
+      <div class="box">
+        <div class="icon">📋</div>
+        <h4>Proje</h4>
+        <p>Toplum yararına yürütülen 15 farklı alandaki proje, üyelerimizin ve gönüllülerimizin katkılarıyla hayata geçirilmiştir.</p>
+      </div>
+      <div class="box">
+        <div class="icon">🎓</div>
+        <h4>Eğitim ve Sertifika</h4>
+        <p>Derneğimizde bugüne kadar 25 farklı eğitim programı düzenlenmiş, bu programlar sonunda 600’ün üzerinde katılımcıya sertifika verilmiştir.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="misyon-vizyon" class="page"><h2>Misyonumuz - Vizyonumuz</h2></section>
+  <section id="amac-hedef" class="page"><h2>Amaçlar ve Hedefler</h2></section>
+  <section id="tuzuk" class="page"><h2>Tüzüğümüz</h2></section>
+  <section id="tarihce" class="page"><h2>Tarihçemiz</h2></section>
+
+  <section id="yonetim-kurulu" class="page"><h2>Yönetim Kurulu</h2></section>
+  <section id="denetim-kurulu" class="page"><h2>Denetim Kurulu</h2></section>
+  <section id="onceki-kurullar" class="page"><h2>Önceki Kurullar</h2></section>
+
+  <section id="etkinlikler" class="page"><h2>Etkinlikler</h2></section>
+  <section id="toplantilar" class="page"><h2>Toplantılar</h2></section>
+  <section id="projeler" class="page"><h2>Projeler</h2></section>
+
+  <section id="gundem" class="page"><h2>Gündem</h2></section>
+  <section id="takvim" class="page"><h2>Etkinlik Takvimi</h2></section>
+  <section id="ilanlar" class="page"><h2>İş İlanları</h2></section>
+
+  <section id="iletisim" class="page"><h2>İletişim</h2></section>
 
 </body>
 </html>
