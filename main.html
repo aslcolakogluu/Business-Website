@@ -2,11 +2,15 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>POBİAD Navbar</title>
 
-  <!-- Google Fonts -->
+  
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 
@@ -112,38 +116,107 @@
     </p>
     <h3>Neler Yapıyoruz?</h3>
     <div class="features">
-      <div class="features-item"><span>1</span>Konferanslar</div>
-      <div class="features-item"><span>3</span>Organizasyon</div>
-      <div class="features-item"><span>2</span>Seminerler</div>
-      <div class="features-item"><span>4</span>Çalışma Ortamları</div>
-    </div>
+      <div class="column">
+        <div class="features-item"><span>1</span>Konferanslar</div>
+        <div class="features-item"><span>2</span>Seminerler</div>
+      </div>
+      <div class="column">
+        <div class="features-item"><span>3</span>Organizasyon</div>
+        <div class="features-item"><span>4</span>Çalışma Ortamları</div>
+      </div>
+</div>
 
-    <div class="info-boxes">
-      <div class="box">
-        <div class="icon">💛</div>
+    <div class="info-section">
+      <hr class="section-divider">
+
+    <div class="info-items">
+      <div class="item">
+        <i class="ri-team-line"></i>
         <h4>Üye</h4>
         <p>Farklı meslek gruplarından ve yaş aralıklarından oluşan 300 üyemizle, büyüyen bir aile olmanın gururunu yaşıyoruz.</p>
-      </div>
-      <div class="box">
-        <div class="icon">🗓️</div>
-        <h4>Etkinlik</h4>
-        <p>Derneğimizde bugüne kadar 335 farklı etkinlik başarıyla düzenlenmiştir.</p>
-      </div>
-      <div class="box">
-        <div class="icon">📋</div>
-        <h4>Proje</h4>
-        <p>Toplum yararına yürütülen 15 farklı alandaki proje, üyelerimizin ve gönüllülerimizin katkılarıyla hayata geçirilmiştir.</p>
-      </div>
-      <div class="box">
-        <div class="icon">🎓</div>
-        <h4>Eğitim ve Sertifika</h4>
-        <p>Derneğimizde bugüne kadar 25 farklı eğitim programı düzenlenmiş, bu programlar sonunda 600’ün üzerinde katılımcıya sertifika verilmiştir.</p>
-      </div>
     </div>
+    <div class="item">
+      <i class="ri-calendar-event-line"></i>
+      <h4>Etkinlik</h4>
+      <p>Derneğimizde bugüne kadar 335 farklı etkinlik başarıyla düzenlenmiştir.</p>
+    </div>
+    <div class="item">
+      <i class="ri-line-chart-fill"></i>
+      <h4>Proje</h4>
+      <p>Toplum yararına yürütülen 15 farklı alandaki proje, üyelerimizin ve gönüllülerimizin katkılarıyla hayata geçirilmiştir.</p>
+    </div>
+    <div class="item">
+      <i class="ri-graduation-cap-line"></i>
+      <h4>Eğitim ve Sertifika</h4>
+      <p>Bugüne kadar 25 farklı eğitim programı düzenlenmiş, 600’ün üzerinde katılımcıya sertifika verilmiştir.</p>
+    </div>
+  </div>
+</div>
+
+
   </section>
 
-  <section id="misyon-vizyon" class="page"><h2>Misyonumuz - Vizyonumuz</h2></section>
-  <section id="amac-hedef" class="page"><h2>Amaçlar ve Hedefler</h2></section>
+ <section id="etkinlikler" class="page">
+  <h2 class="section-title">Yaklaşan Etkinlikler</h2>
+
+  <div class="slider-wrapper">
+    <div class="arrow left-arrow">&#10094;</div>
+
+    <div class="card-container">
+      <div class="event-card">
+        <img src="etkinlik1.jpg" alt="Geleceğin Liderleri Buluşuyor">
+        <div class="card-content">
+          <h3>Geleceğin Liderleri Buluşuyor</h3>
+          <p>POBİAD olarak, vizyon sahibi gençleri ve geleceğin iş dünyasına yön verecek lider adaylarını bir araya getiriyoruz!</p>
+          <a href="#" class="read-more">DEVAMINI OKU</a>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="etkinlik2.jpg" alt="İş Dünyasında Güç Birliği Zirvesi">
+        <div class="card-content">
+          <h3>İş Dünyasında Güç Birliği Zirvesi</h3>
+          <p>POBİAD olarak, vizyon sahibi gençleri ve geleceğin iş dünyasına yön verecek lider adaylarını bir araya getiriyoruz!</p>
+          <a href="#" class="read-more">DEVAMINI OKU</a>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="etkinlik3.jpg" alt="2025 Strateji Toplantısı">
+        <div class="card-content">
+          <h3>2025 Strateji Değerlendirme Ve Proje Planlama Toplantısı</h3>
+          <p>2025 Strateji değerlendirme ve proje planlama toplantısı gerçekleştirildi</p>
+          <a href="#" class="extra-read-more">DEVAMINI OKU</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="arrow right-arrow">&#10095;</div>
+  </div>
+</section>
+
+ <section id="toplantilar" class="page">
+  <div class="meetings-container">
+    <div class="text-content">
+      <h2 class="section-title">Toplantılar</h2>
+      <h3 class="meeting-title">"Genç Yetenekler Gelişim Programı"</h3>
+      <p class="meeting-description">
+        Gençlerin potansiyellerini keşfetmeleri ve sosyal hayata aktif katılım göstermeleri amacıyla başlattığımız “Genç Yetenekler Gelişim Programı”, katılımcılara eğitim, mentorluk ve uygulamalı atölye deneyimi sunmayı hedefliyor. Bu proje ile; üretken, özgüvenli ve toplumsal fayda yaratma vizyonuna sahip bireylerin yetişmesini destekliyoruz.
+      </p>
+    </div>
+
+    <div class="video-box">
+      <div class="play-button" onclick="playVideo()">
+        <svg viewBox="0 0 24 24" fill="white" width="24" height="24">
+          <path d="M8 5v14l11-7z"/>
+        </svg>
+      </div>
+      <video id="video" src="video1.mp4" controls style="display: none;"></video>
+    </div>
+  </div>
+</section>
+
+
   <section id="tuzuk" class="page"><h2>Tüzüğümüz</h2></section>
   <section id="tarihce" class="page"><h2>Tarihçemiz</h2></section>
 
@@ -161,5 +234,6 @@
 
   <section id="iletisim" class="page"><h2>İletişim</h2></section>
 
+  <script src="script.js"></script>
 </body>
 </html>
