@@ -72,7 +72,7 @@
     </ul>
 
     <div class="navbar-right">
-      <a class="btn login" href="#">ÜYE GİRİŞ</a>
+      <a class="btn login" href="uye.html">ÜYE GİRİŞ</a>
       <a class="btn donate" href="#">BAĞIŞ YAP</a>
     </div>
   </nav>
@@ -205,34 +205,136 @@
       </p>
     </div>
 
-    <div class="video-box">
-      <div class="play-button" onclick="playVideo()">
-        <svg viewBox="0 0 24 24" fill="white" width="24" height="24">
-          <path d="M8 5v14l11-7z"/>
-        </svg>
+<div class="video-box">
+ 
+  <div class="video-cover" id="video-cover">
+    <img src="etkinlik1.jpg" alt="Kapak Resmi" />
+  </div>
+
+  
+  <video id="video" src="video1.mp4" muted playsinline style="display:none;"></video>
+
+  
+  <div class="play-button" onclick="playVideo()">
+    <svg viewBox="0 0 24 24" fill="white" width="24" height="24">
+      <path d="M8 5v14l11-7z"/>
+    </svg>
+  </div>
+</div>
+
+ 
+
+
+</section>
+
+  <section id="ilanlar" class="page">
+    <h2 class="section-title">İş İlanları</h2>
+
+    <div class="slider-wrapper">
+    <div class="arrow left-arrow">&#10094;</div>
+
+    <div class="card-container">
+      <div class="event-card">
+        <img src="etkinlik1.jpg" alt="Proje Asistanı">
+        <div class="card-content">
+          <h3>Proje Asistanı</h3>
+          <p>Dernek bünyesinde yarı zamanlı olarak çalışmak için.....</p>
+          <a href="#" class="read-more">İLANI İNCELE</a>
+        </div>
       </div>
-      <video id="video" src="video1.mp4" controls style="display: none;"></video>
+
+      <div class="event-card">
+        <img src="etkinlik2.jpg" alt="Eğitim Koordinatörü">
+        <div class="card-content">
+          <h3>Eğitim Koordinatörü</h3>
+          <p>Dernek bünyesinde yarı zamanlı olarak çalışmak için...</p>
+          <a href="#" class="read-more">İLANI İNCELE</a>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="etkinlik3.jpg" alt="Gönüllü İlişkiler Uzmanı">
+        <div class="card-content">
+          <h3>Gönüllü İlişkiler Uzmanı</h3>
+          <p>Dernek bünyesinde yarı zmaanlı olarak çalışmak için...</p>
+          <a href="#" class="extra-read-more">İLANI İNCELE</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="arrow right-arrow">&#10095;</div>
+  </div>
+</section>
+  
+<section class="slider-section">
+  <div class="slider-content">
+    <div class="slider-text-wrapper">
+      <div class="slider-texts">
+        <!-- Slide 1 -->
+        <div class="slider-text active">
+          <i class="fa-solid fa-quote-left quote-icon"></i>
+          <h2><strong>POBİAD</strong>, Polatlı'da Genç Girişimciler İçin Eğitim Programı Başlattı</h2>
+          <p>
+            Polatlı Bürokratlar ve İş İnsanları Derneği (POBİAD), genç girişimcilere destek olmak amacıyla 
+            “Geleceğin İş İnsanları Eğitim Programı”nı hayata geçirdi...
+          </p>
+          <div class="author">
+            <p><strong>Aslı Can</strong></p>
+            <span>Yazar</span>
+          </div>
+        </div>
+        
+        <!-- Slide 2 -->
+        <div class="slider-text">
+          <i class="fa-solid fa-quote-left quote-icon"></i>
+          <h2><strong>POBİAD</strong>, Öğrencilere Mentorluk Desteği Sunuyor</h2>
+          <p>
+            Mentorluk programı ile gençlerin kariyer planlamalarına katkı sağlanıyor. Etkinlik serisi kapsamında farklı sektörlerden iş insanları öğrencilerle buluşuyor...
+          </p>
+          <div class="author">
+            <p><strong>Ahmet Yılmaz</strong></p>
+            <span>Eğitim Koordinatörü</span>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slider-text">
+          <i class="fa-solid fa-quote-left quote-icon"></i>
+          <h2><strong>POBİAD</strong>, Kadın Girişimcilere Özel Atölye Başlattı</h2>
+          <p>
+            Kadın girişimcilerin projelerini hayata geçirmeleri için özel bir atölye düzenlendi. Eğitimler boyunca iş planı oluşturma, finansal okuryazarlık gibi konular işlendi...
+          </p>
+          <div class="author">
+            <p><strong>Elif Kaya</strong></p>
+            <span>Girişimci</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-dots">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+      </div>
+    </div>
+
+    <div class="slider-video">
+      <div class="video-placeholder">
+        <div class="play-button">
+          <i class="fa-solid fa-play"></i>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 
-  <section id="tuzuk" class="page"><h2>Tüzüğümüz</h2></section>
-  <section id="tarihce" class="page"><h2>Tarihçemiz</h2></section>
-
-  <section id="yonetim-kurulu" class="page"><h2>Yönetim Kurulu</h2></section>
-  <section id="denetim-kurulu" class="page"><h2>Denetim Kurulu</h2></section>
-  <section id="onceki-kurullar" class="page"><h2>Önceki Kurullar</h2></section>
-
-  <section id="etkinlikler" class="page"><h2>Etkinlikler</h2></section>
-  <section id="toplantilar" class="page"><h2>Toplantılar</h2></section>
-  <section id="projeler" class="page"><h2>Projeler</h2></section>
-
-  <section id="gundem" class="page"><h2>Gündem</h2></section>
-  <section id="takvim" class="page"><h2>Etkinlik Takvimi</h2></section>
-  <section id="ilanlar" class="page"><h2>İş İlanları</h2></section>
-
-  <section id="iletisim" class="page"><h2>İletişim</h2></section>
+  
+  
+  
+  
+  
+  
 
   <script src="script.js"></script>
 </body>

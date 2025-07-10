@@ -126,6 +126,7 @@ body {
   display: inline-block;
   transition: transform 0.3s ease;
   font-size: 20px;
+  
 }
 
 .nav-links li:hover .arrow {
@@ -805,39 +806,40 @@ body {
   line-height: 1.6;
 }
 
-.page {
+#etkinlikler {
   padding: 50px 20px;
   background: #fff;
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 @media (max-width: 768px) {
-  .page {
+  #etkinlikler {
     padding: 40px 15px;
   }
 }
 
 @media (max-width: 480px) {
-  .page {
+  #etkinlikler {
     padding: 30px 10px;
   }
 }
 
-.section-title {
-  font-size: 36px;
-  font-weight: 800;
-  margin-bottom: 30px;
-
+#etkinlikler .section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 10px;
+  margin-left: 70px; 
 }
 
 @media (max-width: 480px) {
-  .section-title {
+  #etkinlikler .section-title {
     font-size: 28px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 }
 
-.slider-wrapper {
+#etkinlikler .slider-wrapper {
   display: flex;
   align-items: center;
   position: relative;
@@ -845,50 +847,56 @@ body {
 }
 
 @media (max-width: 480px) {
-  .slider-wrapper {
+  #etkinlikler .slider-wrapper {
     flex-direction: column;
     gap: 20px;
   }
 }
 
-.arrow {
+#etkinlikler .arrow {
   font-size: 30px;
   cursor: pointer;
   user-select: none;
-  padding: 10px;
+  padding: 0 10px; 
+  background: none; 
+  border: none;     
+  color: #000;      
+  line-height: 1;
 }
 
-.card-container {
+
+#etkinlikler .card-container {
   display: flex;
   gap: 130px;
   overflow-x: auto;
   scroll-behavior: smooth;
   margin-top: 100px;
+  margin-left: 13px;
 }
 
 @media (max-width: 1024px) {
-  .card-container {
+  #etkinlikler .card-container {
     gap: 80px;
     margin-top: 60px;
   }
 }
 
 @media (max-width: 768px) {
-  .card-container {
+  #etkinlikler .card-container {
     gap: 50px;
     margin-top: 50px;
   }
 }
 
 @media (max-width: 480px) {
-  .card-container {
+  #etkinlikler .card-container {
     gap: 30px;
     margin-top: 40px;
     flex-wrap: nowrap;
   }
 }
 
-.event-card {
+#etkinlikler .event-card {
   background: #fff;
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -899,27 +907,27 @@ body {
 }
 
 @media (max-width: 1024px) {
-  .event-card {
+  #etkinlikler .event-card {
     width: 400px;
     height: 520px;
   }
 }
 
 @media (max-width: 768px) {
-  .event-card {
+  #etkinlikler .event-card {
     width: 320px;
     height: 480px;
   }
 }
 
 @media (max-width: 480px) {
-  .event-card {
+  #etkinlikler .event-card {
     width: 280px;
     height: 420px;
   }
 }
 
-.event-card img {
+#etkinlikler .event-card img {
   width: 100%;
   height: 270px;
   object-fit: cover;
@@ -929,17 +937,17 @@ body {
 }
 
 @media (max-width: 480px) {
-  .event-card img {
+  #etkinlikler .event-card img {
     height: 220px;
   }
 }
 
-.card-content {
+#etkinlikler .card-content {
   padding: 20px;
   margin-top: 40px;
 }
 
-.card-content h3 {
+#etkinlikler .card-content h3 {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -947,26 +955,26 @@ body {
 }
 
 @media (max-width: 480px) {
-  .card-content h3 {
+  #etkinlikler .card-content h3 {
     font-size: 18px;
     margin-bottom: 15px;
   }
 }
 
-.card-content p {
+#etkinlikler .card-content p {
   font-size: 14px;
   color: #555;
   margin-bottom: 50px;
 }
 
 @media (max-width: 480px) {
-  .card-content p {
+  #etkinlikler .card-content p {
     font-size: 13px;
     margin-bottom: 30px;
   }
 }
 
-.read-more {
+#etkinlikler .read-more {
   display: inline-block;
   padding: 20px 175px;
   background: #000;
@@ -981,21 +989,21 @@ body {
 }
 
 @media (max-width: 768px) {
-  .read-more {
+  #etkinlikler .read-more {
     padding: 15px 120px;
     font-size: 12px;
   }
 }
 
 @media (max-width: 480px) {
-  .read-more {
+  #etkinlikler .read-more {
     padding: 12px 80px;
     font-size: 12px;
     margin-top: 30px;
   }
 }
 
-.extra-read-more {
+#etkinlikler .extra-read-more {
   display: inline-block;
   padding: 20px 175px;
   background: #000;
@@ -1010,29 +1018,31 @@ body {
 }
 
 @media (max-width: 768px) {
-  .extra-read-more {
+  #etkinlikler .extra-read-more {
     padding: 15px 120px;
     font-size: 12px;
   }
 }
 
 @media (max-width: 480px) {
-  .extra-read-more {
+  #etkinlikler .extra-read-more {
     padding: 12px 80px;
     font-size: 12px;
     margin-top: 15px;
   }
 }
 
-.extra-read-more .read-more:hover {
+#etkinlikler .extra-read-more:hover,
+#etkinlikler .read-more:hover {
   background: #000000;
 }
+
 .page {
   background-color: #f9f9f9;
   padding: 40px 20px;
 }
 
-.meetings-container {
+#toplantilar .meetings-container {
   display: flex;
   flex-direction: row;
   gap: 40px;
@@ -1041,44 +1051,42 @@ body {
   max-width: 700px;
   margin: auto;
   flex-wrap: wrap;
-  
 }
 
-.text-content {
+#toplantilar .text-content {
   flex: 1;
-  min-width: 20px;
-  max-width: 10px;
-  margin-left: 70px;
+  min-width: 300px;
+  max-width: 500px;
+  margin-left: -950px;
   text-align: left;
-
 }
 
-.section-title {
+#toplantilar .section-title {
   font-size: 2.5rem;
   font-weight: 700;
   font-family: 'Inter', sans-serif;
   margin-bottom: 10px;
-  margin-left: -790px;
+  margin-left: -150px;
 }
 
-.meeting-title {
+#toplantilar .meeting-title {
   font-size: 1.8rem;
   font-weight: 700;
   font-family: 'Inter', sans-serif;
   margin-top: 200px;
-  margin-left: -800px;
+  margin-left: -150px;
 }
 
-.meeting-description {
+#toplantilar .meeting-description {
   font-size: 1rem;
   color: #555;
   line-height: 1.6;
   font-family: 'Inter', sans-serif;
   margin-top: 50px;
-  margin-left: -790px;
+  margin-left: -150px;
 }
 
-.video-box {
+#toplantilar .video-box {
   position: relative;
   flex: 1;
   min-width: 700px;
@@ -1090,83 +1098,352 @@ body {
   margin-left: 900px;
 }
 
-
-.video-box.blur-active::before {
-  content: "";
-  position: absolute;
-  inset: 0;
+#toplantilar .video-box.blur-active video {
   filter: blur(3px);
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.2); 
   transition: filter 0.3s ease;
 }
 
+#toplantilar .video-box.blur-active .video-overlay {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+  z-index: 1;
+}
 
-.video-box video {
+#toplantilar .video-box {
+  position: relative;
+  width: 640px;
+  height: 360px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#toplantilar .video-cover {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  overflow: hidden;
+}
+
+#toplantilar .video-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(6px);
+  transition: opacity 0.3s ease;
+}
+
+#toplantilar video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
-  display: block;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: 0;
   position: relative;
+  z-index: 1;
+  display: none;
 }
 
-
-.video-box.video-active video {
-  opacity: 1;
-}
-
-.play-button {
+#toplantilar .play-button {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #ff7f1e;
+  background: rgba(255, 127, 30, 0.9);
   width: 64px;
   height: 64px;
   border-radius: 50%;
+  cursor: pointer;
+  z-index: 3;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-  z-index: 2;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   transition: opacity 0.3s ease;
 }
 
-
-.play-button.hidden {
+#toplantilar .play-button.hidden {
   opacity: 0;
   pointer-events: none;
 }
 
-.play-button svg {
-  fill: white;
-  width: 20px;
-  height: 20px;
+/* Genel sayfa düzeni */
+.page {
+  padding: 60px 30px;
+  background-color: #f9f9f9;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#ilanlar.page {
+  padding: 60px 30px;
+  background-color: #f9f9f9;
+  font-family: 'Open Sans', sans-serif;
 }
 
 
-@media (max-width: 992px) {
-  .meetings-container {
-    flex-direction: column;
-    gap: 30px;
+#ilanlar .section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 10px;
+  margin-left: 40px;
+  color: #000;
+
+}
+
+/* Slider yapısı */
+#ilanlar .slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+}
+
+/* Oklar */
+#ilanlar .arrow {
+  font-size: 32px;
+  cursor: pointer;
+  padding: 10px;
+  user-select: none;  
+  color: rgb(0, 0, 0);  
+  transition: background 0.3s;
+  z-index: 2;
+}
+
+#ilanlar .arrow:hover {
+  background-color: #32486c;
+}
+
+#ilanlar .left-arrow {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#ilanlar .right-arrow {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Kart konteyneri */
+#ilanlar .card-container {
+  display: flex;
+  gap: 50px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 150px;
+  margin-top: 150px;
+  height: 500px;
+  width: 100%;
+  margin-left: -20px;
+}
+
+#ilanlar .card-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Her ilan kartı */
+#ilanlar .event-card {
+  flex: 0 0 500px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+#ilanlar .event-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Kart içeriği */
+#ilanlar .event-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  filter: blur(6px);
+}
+
+#ilanlar .card-content {
+  padding: 30px;
+  margin-left: -20px;
+}
+
+#ilanlar .card-content h3 {
+  font-size: 30px;
+  color: #050505;
+  margin-bottom: 10px;
+  font-weight: 900;
+}
+
+#ilanlar .card-content p {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 15px;
+  font-family: 'Inter', sans-serif;
+}
+
+#ilanlar .read-more,
+#ilanlar .extra-read-more {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #010305;
+  padding: 10px 181px;
+  border-radius: 8px;
+  transition: background 0.3s;
+  margin-top: 60px;
+  margin-left: 20px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  text-align: left;
+  
+  
+}
+
+#ilanlar .read-more:hover,
+#ilanlar .extra-read-more:hover {
+  background-color: #b1b1b1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #ilanlar .section-title {
+    font-size: 28px;
   }
 
-  .section-title {
-    font-size: 2rem;
+  #ilanlar .event-card {
+    flex: 0 0 250px;
   }
 
-  .meeting-title {
-    font-size: 1.5rem;
-  }
-
-  .video-box {
-    margin: 0 auto;
-    min-width: 90%;
-    max-width: 100%;
+  #ilanlar .arrow {
+    font-size: 26px;
+    padding: 8px;
   }
 }
+
+.slider-section {
+  padding: 80px;
+  background-color: #f8f8f8;
+  font-family: 'Arial', sans-serif;
+}
+
+.slider-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+/* KAYDIRMALI YAPI BAŞLANGIÇ */
+.slider-text-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+  flex: 1;
+  max-width: 55%;
+}
+
+.slider-texts {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 300%; /* 3 içerik varsa */
+}
+
+.slider-text {
+  width: 100%;
+  flex-shrink: 0;
+  padding-right: 30px;
+  opacity: 0.4;
+  transition: opacity 0.5s ease;
+}
+
+.slider-text.active {
+  opacity: 1;
+}
+/* KAYDIRMALI YAPI BİTİŞ */
+
+.quote-icon {
+  font-size: 64px;
+  color: #ff7a00;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.slider-text h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.slider-text p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.author p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.author span {
+  font-size: 14px;
+  color: #555;
+}
+
+.slider-dots {
+  margin-top: 30px;
+}
+
+.slider-dots .dot {
+  height: 12px;
+  width: 12px;
+  margin-right: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.slider-dots .dot.active,
+.slider-dots .dot:hover {
+  background-color: #ff7a00;
+}
+
+.slider-video {
+  flex: 1;
+  max-width: 45%;
+}
+
+.video-placeholder {
+  position: relative;
+  background: url('your-blurred-image.jpg') center/cover no-repeat;
+  width: 100%;
+  height: 480px;
+  border-radius: 24px;
+  filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-button {
+  position: absolute;
+  background-color: #ff7a00;
+  color: white;
+  font-size: 24px;
+  padding: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+

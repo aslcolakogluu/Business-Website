@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>POBİAD Giriş</title>
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="POBİAD Logo" />
+      <div class="logo-text">
+        <span class="main-title">POBİAD</span>
+        <span class="subtext">POLATLI BÜROKRATLAR VE İŞ ADAMLARI DERNEĞİ</span>
+      </div>
+    </div>
+
+    <ul class="nav-links">
+      <li class="dropdown">
+        <a href="#">Anasayfa</a>
+      </li>
+      <li class="dropdown">
+        <a href="#">Hakkımızda <i class="fas fa-chevron-down arrow"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="#pobiad-hakkinda">Pobiad Hakkında</a></li>
+          <li><a href="#misyon-vizyon">Misyonumuz - Vizyonumuz</a></li>
+          <li><a href="#amac-hedef">Amaçlar ve Hedefler</a></li>
+          <li><a href="#tuzuk">Tüzüğümüz</a></li>
+          <li><a href="#tarihce">Tarihçemiz</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#">Kurullar <i class="fas fa-chevron-down arrow"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="#yonetim-kurulu">Yönetim Kurulu</a></li>
+          <li><a href="#denetim-kurulu">Denetim Kurulu</a></li>
+          <li><a href="#onceki-kurullar">Önceki Kurullar</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#">Faaliyetlerimiz <i class="fas fa-chevron-down arrow"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="#etkinlikler">Etkinlikler</a></li>
+          <li><a href="#toplantilar">Toplantılar</a></li>
+          <li><a href="#projeler">Projeler</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#">Duyurular <i class="fas fa-chevron-down arrow"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="#gundem">Gündem</a></li>
+          <li><a href="#takvim">Etkinlik Takvimi</a></li>
+          <li><a href="#ilanlar">İş İlanları</a></li>
+        </ul>
+      </li>
+      <li><a href="#iletisim">İletişim</a></li>
+    </ul>
+
+    <div class="navbar-right">
+      <a class="btn login" href="uye.html">ÜYE GİRİŞ</a>
+      <a class="btn donate" href="#">BAĞIŞ YAP</a>
+    </div>
+  </nav>
+  
+    <!-- Login Form -->
+  <main class="login-container">
+    <div class="login-box">
+      <h2>Giriş Yap</h2>
+      <form>
+        <input type="email" placeholder="E-Mail" required />
+        <div class="password-field">
+          <input type="password" placeholder="Şifre" id="password" required />
+          <span onclick="togglePassword()">şifreyi göster</span>
+        </div>
+        <a href="#" class="forgot">Parolanızı mı unuttunuz?</a>
+        <button type="submit" class="login-btn">Devam Et</button>
+      </form>
+      <p class="register">Hesabınız yok mu? <a href="#">Kayıt olun.</a></p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="footer-contact">
+          <p>Telefon: 0312 466 27 34</p>
+          <p>E-posta: info@pobiad.org</p>
+          <p>Adres: Nasuh Akar Mah. Ziyabey Cad. 1407 Sokak Dostlar Sitesi B Blok 3/E Balgat / Çankaya / ANKARA</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>LİNKLER</h4>
+            <ul>
+              <li><a href="#">Anasayfa</a></li>
+              <li><a href="#">Hakkımızda</a></li>
+              <li><a href="#">Kurulumuz</a></li>
+              <li><a href="#">Etkinlikler</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>SOSYAL MEDYA</h4>
+            <div class="social-icons">
+              <a href="#">🔗</a>
+              <a href="#">🔗</a>
+              <a href="#">🔗</a>
+              <a href="#">🔗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-map">
+        <img src="map-placeholder.png" alt="Harita" />
+      </div>
+    </div>
+  </footer>
+    
+      
+
+  <script src="uye.js"></script>
+</body>
+</html>
