@@ -27,23 +27,47 @@ document.getElementById("video").addEventListener("ended", () => {
 });
 
 
-  const dots = document.querySelectorAll(".slider-dots .dot");
-  const sliderTexts = document.querySelector(".slider-texts");
+ const dots = document.querySelectorAll("#gundem .slider-dots .dot");
+const sliderTexts = document.querySelector("#gundem .slider-texts");
 
-  dots.forEach(dot => {
-    dot.addEventListener("mouseenter", () => {
-      const index = dot.getAttribute("data-index");
-      
-      // Tüm dotlardan 'active' sınıfını kaldır
-      dots.forEach(d => d.classList.remove("active"));
-      dot.classList.add("active");
+dots.forEach(dot => {
+  dot.addEventListener("mouseenter", () => {
+    const index = dot.getAttribute("data-index");
 
-      // Kaydır
-      sliderTexts.style.transform = `translateX(-${index * 100}%)`;
+    // Tüm dotlardan 'active' sınıfını kaldır
+    dots.forEach(d => d.classList.remove("active"));
+    dot.classList.add("active");
 
-      // Tüm slider-text'ten 'active' sınıfını kaldır
-      document.querySelectorAll('.slider-text').forEach(txt => txt.classList.remove('active'));
-      document.querySelectorAll('.slider-text')[index].classList.add('active');
+    // Kaydır
+    sliderTexts.style.transform = `translateX(-${index * 100}%)`;
+
+    // Tüm slider-text'ten 'active' sınıfını kaldır
+    document.querySelectorAll('#gundem .slider-text').forEach(txt => txt.classList.remove('active'));
+    document.querySelectorAll('#gundem .slider-text')[index].classList.add('active');
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const playButton = document.getElementById("play-button");
+  const videoPlaceholder = document.getElementById("video-placeholder");
+  const video = document.getElementById("slider-video-player");
+
+  playButton.addEventListener("click", function () {
+    videoPlaceholder.classList.add("playing"); // Kapak resminin blur'u kalkacak ve opaklığı 0 olacak
+    video.setAttribute("controls", "");
+    video.play().then(() => {
+      playButton.classList.add("hidden");
+    }).catch(err => {
+      console.error("Video başlatılamadı:", err);
     });
   });
+
+  video.addEventListener("ended", function () {
+    videoPlaceholder.classList.remove("playing");
+    playButton.classList.remove("hidden");
+    video.removeAttribute("controls");
+    video.currentTime = 0;
+  });
+});
 
